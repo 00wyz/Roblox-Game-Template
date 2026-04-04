@@ -1,0 +1,12 @@
+# Wally packages
+Packages/
+ServerPackages/
+
+# Rojo
+sourcemap.json
+*.rbxl
+*.rbxlx
+
+# OS
+.DS_Store
+Thumbs.db
