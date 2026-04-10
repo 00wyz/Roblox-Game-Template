@@ -2,7 +2,7 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local TopbarPlus = require(ReplicatedStorage.Packages.TopbarPlus)
-local CmdrClient = require(ReplicatedStorage:WaitForChild("CmdrClient")) :: any
+local CmdrClient = require(ReplicatedStorage:WaitForChild("CmdrClient") :: ModuleScript) :: any
 local Admins = require(ReplicatedStorage.Shared.Config.Admins)
 
 local TOGGLE_KEY = Enum.KeyCode.F2

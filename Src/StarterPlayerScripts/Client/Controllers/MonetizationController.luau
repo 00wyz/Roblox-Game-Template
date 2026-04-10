@@ -51,25 +51,25 @@ function MonetizationController:DeveloperProduct(productId)
 end
 
 function MonetizationController:_initPurchaseProcess()
-	local playerGui = LocalPlayer:WaitForChild("PlayerGui")
+	local playerGui = LocalPlayer:WaitForChild("PlayerGui") :: PlayerGui
 	local monetizationProcessUI = playerGui:FindFirstChild("MonetizationProcessUI")
 		or playerGui:FindFirstChild("MonetizationProcessUI", true)
 
 	if monetizationProcessUI then
-		monetizationProcessUI.Enabled = true
+		(monetizationProcessUI :: ScreenGui).Enabled = true
 	end
 
 	SoundController:PlaySFX("purchase_process")
 end
 
 function MonetizationController:_endPurchaseProcess()
-	local playerGui = LocalPlayer:FindFirstChild("PlayerGui")
+	local playerGui = LocalPlayer:FindFirstChild("PlayerGui") :: PlayerGui
 
 	local monetizationProcessUI = playerGui:FindFirstChild("MonetizationProcessUI")
 		or playerGui:FindFirstChild("MonetizationProcessUI", true)
 
 	if monetizationProcessUI then
-		monetizationProcessUI.Enabled = false
+		(monetizationProcessUI :: ScreenGui).Enabled = false
 	end
 end
 
