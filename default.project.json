@@ -1,5 +1,5 @@
 {
-  "name": "bus-sim",
+  "name": "rbx-game",
   "tree": {
     "$className": "DataModel",
     "ReplicatedFirst": {
